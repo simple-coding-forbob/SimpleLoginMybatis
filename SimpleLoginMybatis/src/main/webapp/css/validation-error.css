@@ -1,0 +1,8 @@
+label.error {
+    color: red;           /* 글자색 */
+    font-size: 0.9rem;
+}
+
+input.error {
+    border: 2px solid red;   /* 테두리 강조 */
+}
