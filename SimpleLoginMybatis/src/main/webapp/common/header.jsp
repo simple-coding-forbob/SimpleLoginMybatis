@@ -69,5 +69,28 @@
                 </ul>
             </li>
         </ul>
+
+        <!-- 메뉴(오른쪽) -->
+        <ul class="flex flex-col gap-4 pl-5 py-2 md:flex-row">
+            <!-- {/* 로그인 시작 */} -->
+            <c:if test="${sessionScope.memberVO == null}">
+                <li class="group md:relative">
+                    <a class="hover:underline"  href="/register"> 회원가입 </a>
+                </li>
+                <li class="group md:relative">
+                    <a class="hover:underline"  href="/login"> 로그인 </a>
+                </li>
+            </c:if>
+            <!-- {/* 로그인 끝 */} -->
+
+            <!-- {/* 로그아웃 시작 */} -->
+            <c:if test="${sessionScope.memberVO != null}">
+                <li class="group md:relative">
+                    <a href="/logout"  class="hover:underline" > 로그아웃
+                    </a>
+                </li>
+            </c:if>
+            <!-- {/* 로그아웃 끝 */} -->
+        </ul>
     </div>
 </nav>

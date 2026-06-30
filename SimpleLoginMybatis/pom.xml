@@ -92,6 +92,13 @@
             <version>3.0.5</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- 순수 jBCrypt 라이브러리 (Spring Security 미사용) -->
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
     </dependencies>
 
     <build>
